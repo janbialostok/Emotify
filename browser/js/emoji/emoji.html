@@ -1,0 +1,24 @@
+<section class='container'>
+	<main class='row'>
+		<section class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+			<div class='auto-size'>
+				<div ng-show='!videoStart' id='videoButton' class='align-center' ng-click='ready()'>
+					<emotify class='margin-top'></emotify>
+					<h1 class='primary-color'>Click to Start Webcam</h1>
+				</div>
+				<div ng-show='videoStart'>
+					<div class='align-center' ng-show='!captured'>
+						<h1 class='primary-color'>Click to take photo</h1>
+					</div>
+					<video ng-show='!captured' id='video' class='margin-top' ng-click='snap()' autoplay></video>
+					<canvas ng-show='captured' id='canvas' class='margin-top'></canvas>
+					<div class='margin-top'>
+						<button ng-show='!captured' ng-click='goBack()' class='btn btn-block btn-danger'>Go Back</button>
+						<button ng-show='captured' class='btn btn-block btn-primary' ng-click='process()'>Save & Process</button>
+						<button ng-show='captured' ng-click='redo()' class='btn btn-block btn-danger'>Take Another Photo</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+</section>

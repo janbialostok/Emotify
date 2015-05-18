@@ -1,0 +1,35 @@
+<main class='container'>
+	<div class='row margin-top'>
+		<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 align-center'>
+			<h1 class='primary-color'>Sign Up</h1>
+		</div>
+	</div>
+	<section class='row margin-top'>
+		<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12'>
+			<div class='signin'>
+				<form name='signupForm' ng-submit='signupForm.$valid && signup.password === signup.repeat && signup()'>
+					<div class='form-group'>
+						<label for='email' class='primary-color'>Email</label>
+						<input class='form-control' name='email' ng-model='signup.email' type='text' placeholder='example@test.com'/>
+					</div>
+					<div class='form-group'>
+						<label for='password' class='primary-color'>Password</label>
+						<input class='form-control' type='password' ng-model='signup.password' name='password' placeholder='Enter Password...'/>
+					</div>
+					<div class='form-group'>
+						<label for='repeat' class='primary-color'>Re-Enter Password</label>
+						<input class='form-control' type='password' ng-model='signup.repeat' name='repeat' placeholder='Re-Enter Password...'/>
+					</div>
+					<button type='submit' class='btn btn-primary'>Submit</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<div class='row margin-top'>
+		<div class='col-lg-12 col-md-12 col-sm-12 col-xs-12 align-center'>
+			<div class='signin'>
+				<a class='btn btn-block btn-danger' ui-sref='home'>Go Back</a>
+			</div>
+		</div>
+	</div>
+</main>

@@ -1,0 +1,73 @@
+#home {
+	
+}
+
+body {
+	background-color: #222222;
+	h1 {
+		font-family: 'Lobster', cursive;
+	}
+	h2 {
+		font-family: 'Lobster', cursive;
+	}
+	h3 {
+		font-family: 'Lobster', cursive;
+	}
+}
+
+.align-left {
+	text-align: left;
+}
+.align-center {
+	text-align: center;
+}
+.align-right {
+	text-align: right;
+}
+.primary-color {
+	color: #1967be;
+}
+
+.margin-top {
+	margin-top: 20px;
+}
+.margin-left {
+	margin-left: 20px;
+}
+.margin-right {
+	margin-right: 20px;
+}
+.margin-bottom {
+	margin-bottom: 20px;
+}
+
+.signin {
+	width: 600px;
+	margin: auto;
+}
+
+.logo-border {
+	border: 5px solid #1967be;
+	border-radius: 200px;
+	width: 150px;
+	margin: 0px auto 0px auto;
+}
+
+#video {
+	height: auto;
+	width: 100%;
+}
+
+#videoButton {
+	cursor: pointer;
+	opacity: 0.7;
+}
+
+#videoButton:hover {
+	opacity: 1.0;
+}
+
+#canvas {
+	height: auto;
+	width: 100%;
+}
